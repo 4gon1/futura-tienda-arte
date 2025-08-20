@@ -1,0 +1,16 @@
+/* Estilos generales */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+  padding: 100px 0;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.03);
+}
