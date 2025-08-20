@@ -1,0 +1,33 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Estilos para el footer */
+footer {
+    background: linear-gradient(135deg, #343a40 0%, #212529 100%);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 200px;
+    }
+}
