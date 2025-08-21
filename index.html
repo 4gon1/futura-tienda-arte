@@ -3,59 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galería de Arte | Cuadros Originales</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilos.css">
+  <title>Tienda de Cuadros al Óleo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">Galería de Arte</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
-          <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero bg-dark text-white text-center py-5">
-    <div class="container">
-      <h1>Cuadros Hechos a Mano</h1>
-      <p>Encuentra la pieza perfecta para tu hogar.</p>
-      <a href="tienda.html" class="btn btn-primary">Ver Colección</a>
-    </div>
+  <header>
+    <h1>Galería de Óleos</h1>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Sobre el artista</a>
+      <a href="#carrito">Carrito</a>
+    </nav>
   </header>
 
-  <!-- Destacados -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Obras Destacadas</h2>
-      <div class="row">
-        <!-- Cuadro 1 -->
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300x400" class="card-img-top" alt="Cuadro abstracto">
-            <div class="card-body">
-              <h5 class="card-title">Atardecer Abstracto</h5>
-              <p class="card-text">$150.00</p>
-              <button class="btn btn-primary add-to-cart" data-id="1">Añadir al Carrito</button>
-            </div>
-          </div>
-        </div>
-        <!-- Más cuadros... -->
-      </div>
-    </div>
-  </section>
+  <main>
+    <section id="catalogo">
+      <h2>Catálogo</h2>
+      <div class="grid" id="product-grid"></div>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
+    <section id="sobre">
+      <h2>Sobre el artista</h2>
+      <p>Nacido en Sevilla en 1980, el artista ha desarrollado una sólida carrera en la pintura al óleo, 
+      con un estilo que fusiona tradición y modernidad. Sus obras han sido expuestas en galerías de Madrid, 
+      Barcelona y Lisboa, y forman parte de colecciones privadas en Europa y América. 
+      Ha participado en ferias internacionales de arte contemporáneo y recibido menciones honoríficas por 
+      su innovación en el uso de la textura y el color. Con más de 20 años de trayectoria, 
+      continúa explorando nuevas formas de expresión en el lienzo.</p>
+    </section>
+
+    <section id="carrito">
+      <h2>Carrito de compras</h2>
+      <ul id="cart-items"></ul>
+      <button id="checkout-btn">Finalizar pedido por WhatsApp</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Galería de Óleos</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
