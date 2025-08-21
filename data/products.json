@@ -3,15 +3,15 @@
         "id": 1,
         "title": "Cuadro al óleo #1",
         "price": "3000 €",
-        "size": "80x120 cm",
+        "size": "45x35 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #1.",
         "image": "assets/oleo1.jpg"
     },
     {
         "id": 2,
         "title": "Cuadro al óleo #2",
-        "price": "3000 €",
-        "size": "90x70 cm",
+        "price": "6000 €",
+        "size": "100x100 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #2.",
         "image": "assets/oleo2.jpg"
     },
