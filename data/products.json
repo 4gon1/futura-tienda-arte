@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Cuadro al óleo #1",
         "price": "3000 €",
-        "size": "45x35 cm",
+        "size": "54x65 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #1.",
         "image": "assets/oleo1.jpg"
     },
@@ -19,39 +19,39 @@
         "id": 3,
         "title": "Cuadro al óleo #3",
         "price": "3000 €",
-        "size": "100x100 cm",
+        "size": "61x50 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #3.",
         "image": "assets/oleo3.jpg"
     },
     {
         "id": 4,
         "title": "Cuadro al óleo #4",
-        "price": "3000 €",
-        "size": "70x90 cm",
+        "price": "4500 €",
+        "size": "100x46 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #4.",
         "image": "assets/oleo4.jpg"
     },
     {
         "id": 5,
         "title": "Cuadro al óleo #5",
-        "price": "3000 €",
-        "size": "120x80 cm",
+        "price": "4500 €",
+        "size": "100x46 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #5.",
         "image": "assets/oleo5.jpg"
     },
     {
         "id": 6,
         "title": "Cuadro al óleo #6",
-        "price": "3000 €",
-        "size": "60x80 cm",
+        "price": "2000 €",
+        "size": "45x35 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #6.",
         "image": "assets/oleo6.jpg"
     },
     {
         "id": 7,
         "title": "Cuadro al óleo #7",
-        "price": "3000 €",
-        "size": "100x70 cm",
+        "price": "2000 €",
+        "size": "45x35 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #7.",
         "image": "assets/oleo7.jpg"
     },
@@ -66,8 +66,8 @@
     {
         "id": 9,
         "title": "Cuadro al óleo #9",
-        "price": "3000 €",
-        "size": "110x90 cm",
+        "price": "3500 €",
+        "size": "56x45 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #9.",
         "image": "assets/oleo9.jpg"
     }
