@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Cuadro al óleo #1",
+        "title": "Cuadro al óleo bodegón #1",
         "price": "3000 €",
         "size": "54x65 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #1.",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "title": "Cuadro al óleo #2",
+        "title": "Cuadro al óleo flores #2",
         "price": "6000 €",
         "size": "100x100 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #2.",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "title": "Cuadro al óleo #3",
+        "title": "Cuadro al óleo chirimollas #3",
         "price": "3000 €",
         "size": "61x50 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #3.",
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "title": "Cuadro al óleo #4",
+        "title": "Cuadro al óleo marina #4",
         "price": "4500 €",
         "size": "100x46 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #4.",
@@ -33,7 +33,7 @@
     },
     {
         "id": 5,
-        "title": "Cuadro al óleo #5",
+        "title": "Cuadro al óleo marina #5",
         "price": "4500 €",
         "size": "100x46 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #5.",
@@ -41,7 +41,7 @@
     },
     {
         "id": 6,
-        "title": "Cuadro al óleo #6",
+        "title": "Cuadro al óleo marina #6",
         "price": "2000 €",
         "size": "45x35 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #6.",
@@ -49,7 +49,7 @@
     },
     {
         "id": 7,
-        "title": "Cuadro al óleo #7",
+        "title": "Cuadro al óleo marina #7",
         "price": "2000 €",
         "size": "45x35 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #7.",
@@ -57,7 +57,7 @@
     },
     {
         "id": 8,
-        "title": "Cuadro al óleo #8",
+        "title": "Cuadro al óleo camino #8",
         "price": "3000 €",
         "size": "90x60 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #8.",
@@ -65,7 +65,7 @@
     },
     {
         "id": 9,
-        "title": "Cuadro al óleo #9",
+        "title": "Cuadro al óleo pueblo #9",
         "price": "3500 €",
         "size": "56x45 cm",
         "description": "Obra original al óleo sobre lienzo, pieza única #9.",
