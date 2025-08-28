@@ -3,36 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tienda de Cuadros al Óleo</title>
+  <title>Galería de Óleos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Galería de Óleos</h1>
-    <nav>
-      <a href="#catalogo">Catálogo</a>
-      <a href="#sobre">Sobre el artista</a>
-      <a href="#carrito">Carrito</a>
-    </nav>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay">
+      <h1 class="title">Galería de Óleos</h1>
+      <nav class="menu">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre">Sobre el artista</a>
+        <a href="#carrito">Carrito</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section id="catalogo">
+    <!-- Catálogo -->
+    <section id="catalogo" class="section">
       <h2>Catálogo</h2>
       <div class="grid" id="product-grid"></div>
     </section>
 
-    <section id="sobre">
-      <h2>Sobre el artista</h2>
-      <p>Nacido en Sevilla en 1980, el artista ha desarrollado una sólida carrera en la pintura al óleo, 
-      con un estilo que fusiona tradición y modernidad. Sus obras han sido expuestas en galerías de Madrid, 
-      Barcelona y Lisboa, y forman parte de colecciones privadas en Europa y América. 
-      Ha participado en ferias internacionales de arte contemporáneo y recibido menciones honoríficas por 
-      su innovación en el uso de la textura y el color. Con más de 20 años de trayectoria, 
-      continúa explorando nuevas formas de expresión en el lienzo.</p>
+    <!-- Enlaces adicionales -->
+    <section class="links">
+      <a href="https://4gon1.github.io/prueba-3/sobre.html" target="_blank">Mis obras</a>
+      <a href="https://4gon1.blogspot.com/2008/" target="_blank">Mi blog</a>
+      <a href="https://4gon1.github.io/pruevas-web-01/" target="_blank">Más de mis obras</a>
+      <a href="https://4gon1.github.io/cuadros-oleo/" target="_blank">Algo más de mis obras</a>
     </section>
 
-    <section id="carrito">
+    <!-- Sobre el artista -->
+    <section id="sobre" class="section about">
+      <h2>Sobre el artista</h2>
+      <p>Artista visual de origen catalán afincado en Andalucía,
+      especializado en pintura al óleo. Su obra explora la relación
+      entre la luz mediterránea y la memoria emocional,
+      con un estilo que oscila entre la figuración y la abstracción.
+      Trabaja principalmente con óleos sobre lienzo,
+      donde el color y la textura se convierten en protagonistas.</p>
+    </section>
+
+    <!-- Carrito -->
+    <section id="carrito" class="section cart">
       <h2>Carrito de compras</h2>
       <ul id="cart-items"></ul>
       <button id="checkout-btn">Finalizar pedido por WhatsApp</button>

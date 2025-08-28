@@ -1,52 +1,188 @@
+/* Tipografías */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #fafafa;
+  font-family: 'Inter', sans-serif;
+  background: #fdfdfc;
+  color: #333;
+  line-height: 1.6;
 }
-header {
-  background: #333;
-  color: white;
-  padding: 1em;
+
+/* Hero con imagen de fondo */
+.hero {
+  height: 80vh;
+  background: url('tu-obraprincipal.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .overlay {
+  background: rgba(0,0,0,0.55);
+  padding: 3rem;
   text-align: center;
+  border-radius: 1rem;
 }
-header nav a {
-  color: white;
-  margin: 0 10px;
+
+.hero .title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.menu a {
+  margin: 0 1rem;
   text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
+
+.menu a:hover {
+  color: #ffdd99;
+}
+
+/* Secciones generales */
+.section {
+  padding: 4rem 8%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #333;
+  margin: 1rem auto 0;
+}
+
+/* Catálogo en grilla */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
 }
-.product-card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 10px;
+
+.grid .card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid .card:hover {
+  transform: translateY(-5px);
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid .info {
+  padding: 1rem;
+}
+
+.grid .info h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.grid .info p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Links de obras externas */
+.links {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.links a {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.links a:hover {
+  background: #555;
+}
+
+/* Sobre el artista */
+.about {
+  background: linear-gradient(to right, #fafafa, #fdfdfc);
+  text-align: center;
+  padding: 3rem 10%;
+  border-left: 4px solid #ddd;
+  border-right: 4px solid #ddd;
+}
+
+.about p {
+  font-size: 1.1rem;
+  font-style: italic;
+  max-width: 800px;
+  margin: auto;
+  color: #444;
+}
+
+/* Carrito */
+.cart {
   text-align: center;
 }
-.product-card img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-#carrito {
-  padding: 20px;
-}
+
 #cart-items {
   list-style: none;
   padding: 0;
+  margin: 1rem 0;
 }
-button {
-  background: #333;
-  color: white;
+
+#cart-items li {
+  background: #fff;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#checkout-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
   border: none;
-  padding: 10px 20px;
+  border-radius: 8px;
+  background: #2e7d32;
+  color: #fff;
   cursor: pointer;
-  border-radius: 5px;
+  transition: background 0.3s ease;
 }
-button:hover {
-  background: #555;
+
+#checkout-btn:hover {
+  background: #43a047;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #bbb;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
 }
