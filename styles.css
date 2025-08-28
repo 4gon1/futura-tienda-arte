@@ -10,7 +10,7 @@ body {
 /* Hero con imagen de fondo */
 .hero {
   height: 80vh;
-  background: url('tu-obraprincipal.jpg') center/cover no-repeat;
+  background: url('banner.jpg') center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
