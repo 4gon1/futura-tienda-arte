@@ -18,11 +18,21 @@ body {
 }
 
 .hero .overlay {
-  background: rgba(0,0,0,0.55);
   padding: 3rem;
   text-align: center;
   border-radius: 1rem;
+  background: linear-gradient(270deg, #ff6b6b, #f7b731, #1dd1a1, #54a0ff, #5f27cd);
+  background-size: 1000% 1000%;
+  animation: gradientShift 15s ease infinite;
 }
+
+/* Animación de gradiente */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 .hero .title {
   font-family: 'Playfair Display', serif;
