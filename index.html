@@ -8,6 +8,48 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<div class="boton-container">
+  <a href="https://www.etsy.com/shop/gonarte/?etsrc=sdt" target="_blank" class="boton-animado">
+    Ir a la página
+       GONART
+  </a>
+</div>
+
+<style>
+  .boton-container {
+    text-align: center;  /* centra el botón en la línea */
+    margin: 30px 0;      /* espacio arriba y abajo */
+  }
+
+  .boton-animado {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 20px 50px;       /* tamaño grande */
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    animation: cambioColor 3s infinite;
+    transition: transform 0.2s;
+  }
+
+  .boton-animado:hover {
+    transform: scale(1.05); /* efecto al pasar el mouse */
+  }
+
+  @keyframes cambioColor {
+    0%   { background-color: #007bff; } /* azul */
+    25%  { background-color: #28a745; } /* verde */
+    50%  { background-color: #ffc107; } /* amarillo */
+    75%  { background-color: #dc3545; } /* rojo */
+    100% { background-color: #007bff; } /* azul otra vez */
+  }
+</style>
+
+  
   <!-- Hero Section -->
   <header class="hero">
     <div class="overlay">
