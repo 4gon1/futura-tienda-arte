@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://4gon1.github.io/futura-tienda-arte/sitemap.xml
