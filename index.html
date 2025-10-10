@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="google-site-verification" content="Lwibzuz_taOD3f2TOXSmQRuvH9txFskWpSndh90Rd9U" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Óleos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+      background-color: Beige;
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+    }
+
+    img {
+      border: 4px solid #333;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      padding: 5px;
+      background-color: white;
+      margin: 10px;
+      width: 300px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ----- Lightbox mejorado ----- */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      padding-top: 60px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      overflow: hidden;
+    }
+
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 800px;
+      border-radius: 10px;
+      opacity: 0;
+      transform: scale(0.8);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .modal.show .modal-content {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 45px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover {
+      color: #bbb;
+    }
+
+    /* Flechas de navegación */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 40px;
+      transition: 0.3s;
+      user-select: none;
+    }
+
+    .prev { left: 10%; }
+    .next { right: 10%; }
+
+    .prev:hover, .next:hover {
+      color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="boton-container">
+    <a href="https://www.etsy.com/shop/gonarte/?etsrc=sdt" target="_blank" class="boton-animado">
+      Ir a la página GONART
+    </a>
+  </div>
+
+  <style>
+    .boton-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .boton-animado {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 20px 50px;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+      animation: cambioColor 3s infinite;
+      transition: transform 0.2s;
+    }
+
+    .boton-animado:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes cambioColor {
+      0%   { background-color: #007bff; }
+      25%  { background-color: #28a745; }
+      50%  { background-color: #ffc107; }
+      75%  { background-color: #dc3545; }
+      100% { background-color: #007bff; }
+    }
+  </style>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay">
+      <h1 class="title">Galería de Óleos</h1>
+      <nav class="menu">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre">Sobre el artista</a>
+        <a href="#carrito">Carrito</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Catálogo -->
+    <section id="catalogo" class="section">
+      <h2>Catálogo</h2>
+      <div class="grid" id="product-grid">
+        <img src="oleo1.jpg" alt="Cuadro 1">
+        <img src="oleo2.jpg" alt="Cuadro 2">
+        <img src="oleo3.jpg" alt="Cuadro 3">
+      </div>
+    </section>
+
+    <!-- Enlaces adicionales -->
+    <section class="links">
+      <a href="https://4gon1.github.io/prueba-3/sobre.html" target="_blank">Mis obras</a>
+      <a href="https://4gon1.blogspot.com/2008/" target="_blank">Mi blog</a>
+      <a href="https://4gon1.github.io/pruevas-web-01/" target="_blank">Más de mis obras</a>
+      <a href="https://4gon1.github.io/cuadros-oleo/" target="_blank">Algo más de mis obras</a>
+    </section>
+
+    <!-- Sobre el artista -->
+    <section id="sobre" class="section about">
+      <h2>Sobre el artista</h2>
+      <p>
+        Artista visual de origen catalán afincado en Andalucía,
+        especializado en pintura al óleo. Su obra explora la relación
+        entre la luz mediterránea y la memoria emocional,
+        con un estilo que oscila entre la figuración y la abstracción.
+      </p>
+    </section>
+
+    <!-- Carrito -->
+    <section id="carrito" class="section cart">
+      <h2>Carrito de compras</h2>
+      <ul id="cart-items"></ul>
+      <button id="checkout-btn">Finalizar pedido por WhatsApp</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Galería de Óleos</p>
+  </footer>
+
+  <!-- Modal con navegación -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <img class="modal-content" id="imgAmpliada">
+    <span class="next">&#10095;</span>
+  </div>
+
+  <script>
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("imgAmpliada");
+    const images = Array.from(document.querySelectorAll("#product-grid img"));
+    const closeBtn = document.querySelector(".close");
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+
+    let currentIndex = 0;
+
+    // Abrir modal
+    images.forEach((img, index) => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        setTimeout(() => modal.classList.add("show"), 10);
+        modalImg.src = img.src;
+        currentIndex = index;
+      });
+    });
+
+    // Cerrar modal
+    closeBtn.onclick = () => {
+      modal.classList.remove("show");
+      setTimeout(() => modal.style.display = "none", 300);
+    };
+
+    // Cerrar al hacer clic fuera
+    modal.onclick = (e) => {
+      if (e.target === modal) closeBtn.onclick();
+    };
+
+    // Navegar entre imágenes
+    function showImage(index) {
+      currentIndex = (index + images.length) % images.length;
+      modalImg.src = images[currentIndex].src;
+    }
+
+    prevBtn.onclick = () => showImage(currentIndex - 1);
+    nextBtn.onclick = () => showImage(currentIndex + 1);
+
+    // Navegar con flechas del teclado
+    document.addEventListener("keydown", (e) => {
+      if (modal.style.display === "block") {
+        if (e.key === "ArrowLeft") showImage(currentIndex - 1);
+        if (e.key === "ArrowRight") showImage(currentIndex + 1);
+        if (e.key === "Escape") closeBtn.onclick();
+      }
+    });
+  </script>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
